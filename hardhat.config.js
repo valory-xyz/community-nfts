@@ -22,10 +22,10 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
 module.exports = {
   solidity: "0.8.7",
   networks: {
-    avalanche: {
-        url: `https://api.avax.network/ext/bc/C/rpc`,
-        accounts: [`private_key_here`]
-    }
+    // avalanche: {
+    //     url: `https://api.avax.network/ext/bc/C/rpc`,
+    //     accounts: [`private_key_here`]
+    // }
   },
   etherscan: {
     // Your API key for Etherscan
