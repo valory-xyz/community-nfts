@@ -29,27 +29,32 @@ The metadata should contain the appropriate uri of the form: `ipfs/{hash}`.
 
 ```json
 {
-	"title": "Asset Metadata",
-	"type": "object",
-	"properties": {
-		"name": {
-			"type": "string",
-			"description": "{NFT_NAME}"
-		},
-		"description": {
-			"type": "string",
-			"description": "{NFT_DESCRIPTION}"	
-		},
+    "title": "Asset Metadata",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "Identifies the asset to which this NFT represents"
+        },
+        "description": {
+            "type": "string",
+            "description": "Describes the asset to which this NFT represents"
+        },
         "image": {
             "type": "string",
-            "description": "ipfs://{NFT_IPFS_HASH}"
-        },
-		"attributes":[{"trait_type":"{TYPE_A}","value":"{VALUE_A}"},]
-	}
+            "description": "A URI pointing to a resource with mime type image/* representing the asset to which this NFT represents. Consider making any images at a width between 320 and 1080 pixels and aspect ratio between 1.91:1 and 4:5 inclusive."
+        }
+    }
 }
 ```
 
-For `CommunityNFT` the `attributes` are: ?
-For `AcademyNFT` the `attributes` are:
-`version` of type `string`, `dateStart` of type `date`, `dateFinish` of type `date`, `participant` of type `int` where this is the tokenId the participant in `CommunityNFT`, `instructors` of type `List[int]` where these are the tokenId of the instructors in `CommunityNFT`.
+For `CommunityNFT` an example is:
+```json
+{"image":"ipfs://{NFT_IPFS_HASH}","attributes":[],"names":"{NFT_NAME}","description":"{NFT_DESCRIPTION}"}
+```
 
+For `AcademyNFT` the `attributes` are:
+`cohortNumber` of type `string`, `dateStart` of type `date`, `dateFinish` of type `date`.
+```json
+{"image":"ipfs://{NFT_IPFS_HASH}","attributes":[{"trait_type":"cohortNumber","value":"{COHORT_NUMBER}"},{"trait_type":"dateStart","value":"{DATE_START}"},{"trait_type":"dateFinish","value":"{DATE_FINISH}"},{"trait_type":"dateEnd","value":"{DATE_END}"}],"names":"{NFT_NAME}","description":"{NFT_DESCRIPTION}"}
+```
