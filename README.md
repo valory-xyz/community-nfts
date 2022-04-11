@@ -59,3 +59,8 @@ For `AcademyNFT` the `attributes` are:
 ```json
 {"image":"ipfs://{NFT_IPFS_HASH}","attributes":[{"trait_type":"cohortNumber","value":"{COHORT_NUMBER}"},{"trait_type":"dateStart","value":"{DATE_START}"},{"trait_type":"dateEnd","value":"{DATE_END}"}],"names":"{NFT_NAME}","description":"{NFT_DESCRIPTION}"}
 ```
+
+## Deployed instances:
+
+https://snowtrace.io/address/0x5C784b617FDfa0163767D93648C0c439824aE8F0#code
+https://snowtrace.io/address/0xB43dD41c0769dA6Ba11D9835d4695B5b56aE67e1#code
