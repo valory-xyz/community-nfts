@@ -18,9 +18,10 @@ To deloy:
 npx hardhat run scripts/deploy.js --network avalanche
 ```
 
-To verify the oracle contract run (after updating `oracle_arguments.js` with the constructor arguments):
+To verify the oracle contract run:
 ``` shell
-npx hardhat verify --network avalanche DEPLOYED_CONTRACT_ADDRESS
+npx hardhat verify --contract contracts/AcademyNFT.sol:AcademyNFT --network avalanche DEPLOYED_CONTRACT_ADDRESS
+npx hardhat verify --contract contracts/AcademyNFT.sol:CommunityNFT --network avalanche DEPLOYED_CONTRACT_ADDRESS
 ```
 
 ## A note on metadata
@@ -56,5 +57,5 @@ For `CommunityNFT` an example is:
 For `AcademyNFT` the `attributes` are:
 `cohortNumber` of type `string`, `dateStart` of type `date`, `dateFinish` of type `date`.
 ```json
-{"image":"ipfs://{NFT_IPFS_HASH}","attributes":[{"trait_type":"cohortNumber","value":"{COHORT_NUMBER}"},{"trait_type":"dateStart","value":"{DATE_START}"},{"trait_type":"dateFinish","value":"{DATE_FINISH}"},{"trait_type":"dateEnd","value":"{DATE_END}"}],"names":"{NFT_NAME}","description":"{NFT_DESCRIPTION}"}
+{"image":"ipfs://{NFT_IPFS_HASH}","attributes":[{"trait_type":"cohortNumber","value":"{COHORT_NUMBER}"},{"trait_type":"dateStart","value":"{DATE_START}"},{"trait_type":"dateEnd","value":"{DATE_END}"}],"names":"{NFT_NAME}","description":"{NFT_DESCRIPTION}"}
 ```
