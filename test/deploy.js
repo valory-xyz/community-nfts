@@ -9,8 +9,8 @@ describe("AcademyNFT", function () {
     const AcademyNFT = await ethers.getContractFactory("AcademyNFT");
     const academyNFT = await AcademyNFT.deploy();
     await academyNFT.deployed();
-    expect(await academyNFT.name()).to.equal("Valory Agent Academy");
-    expect(await academyNFT.symbol()).to.equal("VALORYACADEMY");
+    expect(await academyNFT.name()).to.equal("Autonolas Agent Developer Academy Graduates");
+    expect(await academyNFT.symbol()).to.equal("AUTONOLAS-ACADEMY-GRADS");
     expect(await academyNFT.supportsInterface("0x5b5e139f")).to.equal(true); //IERC721Metadata
     expect(await academyNFT.supportsInterface("0x80ac58cd")).to.equal(true); //IERC721
     expect(await academyNFT.supportsInterface("0x5a05180f")).to.equal(true); //IAccessControlEnumerable
@@ -55,8 +55,8 @@ describe("CommunityNFT", function () {
     const CommunityNFT = await ethers.getContractFactory("CommunityNFT");
     const communityNFT = await CommunityNFT.deploy();
     await communityNFT.deployed();
-    expect(await communityNFT.name()).to.equal("Valory Community");
-    expect(await communityNFT.symbol()).to.equal("VALORYCOMMUNITY");
+    expect(await communityNFT.name()).to.equal("Autonolas Community Recognition Avatars");
+    expect(await communityNFT.symbol()).to.equal("AUTONOLAS-RECOGNITION-AVATARS");
     expect(await communityNFT.supportsInterface("0x5b5e139f")).to.equal(true); //IERC721Metadata
     expect(await communityNFT.supportsInterface("0x80ac58cd")).to.equal(true); //IERC721
     expect(await communityNFT.supportsInterface("0x5a05180f")).to.equal(true); //IAccessControlEnumerable
