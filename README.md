@@ -60,6 +60,9 @@ For `AcademyNFT` the `attributes` are:
 {"image":"ipfs://{NFT_IPFS_HASH}","attributes":[{"trait_type":"cohortNumber","value":"{COHORT_NUMBER}"},{"trait_type":"dateStart","value":"{DATE_START}"},{"trait_type":"dateEnd","value":"{DATE_END}"}],"names":"{NFT_NAME}","description":"{NFT_DESCRIPTION}"}
 ```
 
+AcademyNFT deployed to: `0x8f36fF50a331e638aa510f092b5448A03D432611`
+CommunityNFT deployed to: `0x953B391477177e551BE82d6Fd3ee5F48AAb951dc`
+
 ## Deployed instances:
 
 https://snowtrace.io/address/0x5C784b617FDfa0163767D93648C0c439824aE8F0#code
