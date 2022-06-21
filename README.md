@@ -65,5 +65,5 @@ CommunityNFT deployed to: `0x953B391477177e551BE82d6Fd3ee5F48AAb951dc`
 
 ## Deployed instances:
 
-https://snowtrace.io/address/0x5C784b617FDfa0163767D93648C0c439824aE8F0#code
-https://snowtrace.io/address/0xB43dD41c0769dA6Ba11D9835d4695B5b56aE67e1#code
+https://snowtrace.io/address/0x8f36fF50a331e638aa510f092b5448A03D432611#code
+https://snowtrace.io/address/0x953B391477177e551BE82d6Fd3ee5F48AAb951dc#code
